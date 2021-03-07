@@ -3,6 +3,12 @@
 # R code for the analysis of the home radon levels data #
 #                                                       #
 #########################################################
+# Load the packages
+library(Hmisc) # for rcorr.cens()
+library(lme4)  # for lmer()
+library(MASS)  # for mvrnorm() and ginv()
+library(rstan) # for stan()
+library(cAIC4) # for cAIC()
 
 #######################
 # Set up the radon data
