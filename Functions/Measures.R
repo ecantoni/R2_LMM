@@ -1,10 +1,10 @@
 ###################
 # Load the packages
-library(Hmisc) # version 3.16-0 (for rcorr.cens())
-library(lme4)  # version 1.1-7  (for lmer())
-library(MASS)  # version 7.3-40 (for mvrnorm() and ginv())
-library(rstan) # version 2.6.0  (for stan())
-library(cAIC4) # version 0.2    (for cAIC())
+library(Hmisc) # for rcorr.cens()
+library(lme4)  # for lmer()
+library(MASS)  # for mvrnorm() and ginv()
+library(rstan) # for stan()
+library(cAIC4) # for cAIC()
 
 ###########
 # Functions
