@@ -10,6 +10,9 @@ library(MASS)  # for mvrnorm() and ginv()
 library(rstan) # for stan()
 library(cAIC4) # for cAIC()
 
+# source the provided functions
+source("../Functions/Measures.R")
+
 #######################
 # Set up the radon data
 
