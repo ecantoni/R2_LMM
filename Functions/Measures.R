@@ -82,11 +82,9 @@ SB <- function(model, corr){
     rho <- attr(VarCorr(model)$county, "correlation")[1,2]
   }
   
-  num.1 <- sigma2.a + 2*mean(x)*rho*sigma.a*sigma.b + sigma2.b*((mean(x)^2)+Vb+Vw)
-           + sigma2.y
+  num.1 <- sigma2.a + 2*mean(x)*rho*sigma.a*sigma.b + sigma2.b*((mean(x)^2)+Vb+Vw) + sigma2.y
   denom.1 <- sigma2.y.2 + sigma2.a.2
-  num.2 <- sigma2.a + 2*mean(x)*rho*sigma.a*sigma.b
-           + sigma2.b*((mean(x)^2)+Vb+(Vw/nSB)) + sigma2.y/nSB
+  num.2 <- sigma2.a + 2*mean(x)*rho*sigma.a*sigma.b + sigma2.b*((mean(x)^2)+Vb+(Vw/nSB)) + sigma2.y/nSB
   denom.2 <- (sigma2.y.2/nSB) + sigma2.a.2
   
   R2.1 <- 1 - num.1/denom.1
