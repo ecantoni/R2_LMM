@@ -197,8 +197,7 @@ Prand <- function(y, y.hat, model, model0, lm, corr)
       re <- matrix(c(ranef(model)$county[,1], ranef(model)$county[,2]), ncol=2)
       re.vec <- as.vector(re)
       
-      Prand <- 1 - (dev/(2*phi) + (t(re.vec)%*%ginv(D%x%diag(J))%*%re.vec)/2) 
-               / (D0/(2*phi))
+      Prand <- 1 - (dev/(2*phi) + (t(re.vec)%*%ginv(D%x%diag(J))%*%re.vec)/2) / (D0/(2*phi))
     }
   }
   
